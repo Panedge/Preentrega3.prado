@@ -1,0 +1,98 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "Contactos Metodos" "Telefono Metodos";
+  background-color: #F8F9FA;
+  padding: 20px; }
+  footer h3 {
+    margin-bottom: 10px; }
+  footer .contactos {
+    grid-area: Contactos;
+    margin-left: 68px; }
+  footer .telefono {
+    margin-top: 10px;
+    grid-area: Telefono;
+    margin-left: 68px; }
+  footer .metodos-pago {
+    grid-area: Metodos;
+    margin-top: 25px; }
+    footer .metodos-pago .metodos-pago-texto {
+      display: flex;
+      justify-content: center;
+      margin-right: 300px; }
+    footer .metodos-pago .metodos-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-right: 300px; }
+      footer .metodos-pago .metodos-container .metodo-1,
+      footer .metodos-pago .metodos-container .metodo-2,
+      footer .metodos-pago .metodos-container .metodo-3,
+      footer .metodos-pago .metodos-container .metodo-4,
+      footer .metodos-pago .metodos-container .metodo-5,
+      footer .metodos-pago .metodos-container .metodo-6 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin-right: 10px; }
+
+header {
+  background-color: #ffffff; }
+  header .logo-empresa {
+    max-width: 240px; }
+
+.main-index .container-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 120px;
+  padding: 50px; }
+  .main-index .container-imagenes .item {
+    text-align: center; }
+    .main-index .container-imagenes .item .descuento {
+      color: purple; }
+    .main-index .container-imagenes .item img {
+      width: 100%;
+      height: auto; }
+    .main-index .container-imagenes .item button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer; }
+  .main-index .container-imagenes .item-1 {
+    display: none;
+    grid-area: item-1; }
+
+.main-index .titulo-index-principal {
+  display: grid;
+  grid-template-columns: repeat(2, 90% 10%);
+  grid-template-rows: 1;
+  grid-template-areas: "h1 boton";
+  padding: 10px; }
+  .main-index .titulo-index-principal h1 {
+    grid-area: h1;
+    text-align: center; }
+  .main-index .titulo-index-principal .boton-ofertas {
+    grid-area: boton;
+    justify-self: end;
+    margin-top: 15px;
+    width: 135px; }
+
+.section-index .container-lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 120px;
+  padding: 50px; }
+  .section-index .container-lista .lista img {
+    width: 100%;
+    height: auto; }
+  .section-index .container-lista .lista p {
+    text-align: center;
+    font-size: 50px;
+    z-index: 2000; }

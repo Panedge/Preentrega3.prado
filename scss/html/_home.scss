@@ -1,0 +1,116 @@
+@import "../Utilidades/mixin";
+@import "../Utilidades/Extend";
+@import "../Utilidades/variables";
+
+// Estilos del header
+
+header {
+    background-color: #ffffff;
+
+    .logo-empresa {
+        max-width: 240px;
+    }
+}
+
+// Estilos del main
+
+.main-index {
+    .container-imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 120px;
+        padding: 50px;
+
+
+        .item {
+            text-align: center;
+
+            .descuento {
+                color: purple
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .item-1 {
+            display: none;
+            grid-area: item-1;
+        }
+    }
+
+
+
+
+
+    .titulo-index-principal {
+        display: grid;
+        grid-template-columns: repeat(2, 90% 10%);
+        grid-template-rows: 1;
+
+        grid-template-areas:
+            "h1 boton"
+        ;
+
+        padding: 10px;
+
+
+        h1 {
+            grid-area: h1;
+            text-align: center;
+        }
+
+        .boton-ofertas {
+            grid-area: boton;
+            justify-self: end;
+            margin-top: 15px;
+            width: 135px;
+        }
+
+    }
+}
+
+// Estilos del section
+
+.section-index {
+
+    .container-lista {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 120px;
+        padding: 50px;
+
+        .lista {
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                text-align: center;
+                font-size: 50px;
+                z-index: 2000;
+            }
+        }
+    }
+}
+
+// Estilos del footer
+
+footer {
+    @extend %estilo-footer;
+}
