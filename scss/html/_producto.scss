@@ -1,0 +1,57 @@
+@import "../Utilidades/Extend";
+@import "../Utilidades/mixin";
+@import "../Utilidades/variables";
+
+// Estilos del header
+
+header {
+    background-color: $color-principal;
+
+    .logo-empresa {
+        max-width: 240px;
+    }
+}
+
+// Estilos del main
+
+.main-producto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    padding: 80px;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .columna-caracteristicas {
+        width: auto;
+    }
+
+    .columna-producto {
+        img {
+            width: 500px;
+            height: auto;
+        }
+
+
+        button {
+            display: inline-block;
+            background-color: #EA4C89;
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 500;
+            height: 40px;
+            line-height: 20px;
+            margin: 0;
+            padding: 10px 16px;
+            text-align: center;
+        }
+    }
+
+
+}

@@ -5,7 +5,7 @@
 // Estilos del header
 
 header {
-    background-color: #ffffff;
+    background-color: $color-principal;
 
     .logo-empresa {
         max-width: 240px;
@@ -36,13 +36,7 @@ header {
             }
 
             button {
-                display: block;
-                width: 100%;
-                padding: 10px;
-                background-color: #4caf50;
-                color: white;
-                border: none;
-                cursor: pointer;
+                @include estilo-boton;
             }
         }
 
@@ -93,17 +87,27 @@ header {
         grid-template-rows: auto auto;
         gap: 120px;
         padding: 50px;
+        position: relative;
+        overflow: hidden;
 
         .lista {
             img {
                 width: 100%;
                 height: auto;
+                transform: 0.3s, box-shadow 0,3s;
             }
 
             p {
                 text-align: center;
                 font-size: 50px;
                 z-index: 2000;
+            }
+        }
+        
+        .lista:hover{
+            img{
+                transform: scale(1.1);
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.5)
             }
         }
     }
